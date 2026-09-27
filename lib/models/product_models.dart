@@ -1,0 +1,282 @@
+import 'package:flutter/material.dart';
+
+class ProductModel {
+  final String id;
+  final String title;
+  final String description;
+  final String image;
+  final int reviewCount;
+  final String seller;
+  final double price;
+  final List<Color> colors;
+  final String category;
+  final double rate;
+  final int quantity;
+
+  const ProductModel({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.image,
+    required this.reviewCount,
+    required this.seller,
+    required this.price,
+    required this.colors,
+    required this.category,
+    required this.rate,
+    required this.quantity,
+  });
+}
+
+final List<ProductModel> products = [
+  const ProductModel(
+    id: 'prod_001',
+    title: 'Infant Cotton Onesie Set',
+    description:
+        'Soft 100% organic cotton onesie set designed for sensitive skin.',
+    image: 'assets/images/baby_wears.jpeg',
+    reviewCount: 94,
+    seller: 'TinyTots Store',
+    price: 24.99,
+    colors: [Colors.pink, Colors.blue, Colors.yellow],
+    category: 'Baby wears',
+    rate: 4.7,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_002',
+    title: 'Floral Summer Dress',
+    description:
+        'Lightweight breathable floral dress perfect for warm sunny days.',
+    image: 'assets/images/female_wears.jpeg',
+    reviewCount: 210,
+    seller: 'Elegance Boutique',
+    price: 49.99,
+    colors: [Colors.red, Colors.purple, Colors.orange],
+    category: 'Female wears',
+    rate: 4.9,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_003',
+    title: 'Classic Denim Jacket',
+    description: 'Durable cotton denim jacket featuring chest pockets and button closures.',
+    image: 'assets/images/male_wears.jpeg',
+    reviewCount: 156,
+    seller: 'Urban Denim Co.',
+    price: 65.00,
+    colors: [Colors.blue, Colors.black, Colors.grey],
+    category: 'Male wears',
+    rate: 4.6,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_004',
+    title: '18K Gold Plated Necklace',
+    description:
+        'Minimalist elegant gold chain necklace suitable for daily wear.',
+    image: 'assets/images/jewelry.jpg',
+    reviewCount: 88,
+    seller: 'Luxe Jewelry',
+    price: 89.99,
+    colors: [Colors.amber, Colors.grey],
+    category: 'Jewelry',
+    rate: 4.8,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_005',
+    title: 'Midnight Floral Eau De Parfum',
+    description: 'Long-lasting floral and woody fragrance in a 100ml glass spray bottle.',
+    image: 'assets/images/scents.jpeg',
+    reviewCount: 312,
+    seller: 'Aroma Essence',
+    price: 75.50,
+    colors: [Colors.deepPurple, Colors.indigo],
+    category: 'Scents',
+    rate: 4.9,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_006',
+    title: 'Lightweight Running Sneakers',
+    description:
+        'Cushioned sole athletic shoes designed for comfort and performance.',
+    image: 'assets/images/shoes.jpg',
+    reviewCount: 180,
+    seller: 'Stride Athletics',
+    price: 110.00,
+    colors: [Colors.black, Colors.white, Colors.redAccent],
+    category: 'Shoes',
+    rate: 4.5,
+    quantity: 1,
+  ),
+];
+
+final List<ProductModel> moreProducts = [
+  const ProductModel(
+    id: 'prod_007',
+    title: 'Knitted Baby Beanie & Socks Set',
+    description:
+        'Ultra-soft fleece-lined knit cap and booties set for newborns.',
+    image: 'assets/images/baby_beanie.jpg',
+    reviewCount: 42,
+    seller: 'TinyTots Store',
+    price: 16.50,
+    colors: [Colors.lightBlue, Colors.white, Colors.pinkAccent],
+    category: 'Baby wears',
+    rate: 4.8,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_008',
+    title: 'Silk Wrap Evening Blouse',
+    description:
+        'Elegant satin wrap blouse with long sleeves and adjustable waist tie.',
+    image: 'assets/images/silk_blouse.jpg',
+    reviewCount: 79,
+    seller: 'Elegance Boutique',
+    price: 54.00,
+    colors: [Colors.teal, Colors.black, Colors.orange],
+    category: 'Female wears',
+    rate: 4.7,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_009',
+    title: 'High-Waisted Wide Leg Trousers',
+    description:
+        'Tailored high-rise trousers designed for formal and casual wear.',
+    image: 'assets/images/trousers.jpg',
+    reviewCount: 115,
+    seller: 'Elegance Boutique',
+    price: 68.99,
+    colors: [Colors.brown, Colors.black, Colors.yellowAccent],
+    category: 'Female wears',
+    rate: 4.6,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_010',
+    title: 'Slim-Fit Oxford Cotton Shirt',
+    description:
+        '100% breathable Oxford woven button-down shirt for work or outings.',
+    image: 'assets/images/oxford_shirt.jpg',
+    reviewCount: 204,
+    seller: 'Urban Denim Co.',
+    price: 42.50,
+    colors: [Colors.white, Colors.lightBlueAccent, Colors.blueAccent],
+    category: 'Male wears',
+    rate: 4.8,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_011',
+    title: 'Men\'s Fleece Hoodie',
+    description:
+        'Heavyweight pullover hoodie with kangaroo pocket and drawstring hood.',
+    image: 'assets/images/hoodie.jpg',
+    reviewCount: 340,
+    seller: 'Urban Denim Co.',
+    price: 48.00,
+    colors: [Colors.grey, Colors.black, Color.fromARGB(255, 4, 61, 33)],
+    category: 'Male wears',
+    rate: 4.9,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_012',
+    title: 'Sterling Silver Hoop Earrings',
+    description:
+        'Hypoallergenic 925 sterling silver lightweight medium hoop earrings.',
+    image: 'assets/images/silver_hoops.jpg',
+    reviewCount: 63,
+    seller: 'Luxe Jewelry',
+    price: 35.00,
+    colors: [Colors.grey, Colors.amber],
+    category: 'Jewelry',
+    rate: 4.5,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_013',
+    title: 'Diamond Accent Band Ring',
+    description: 'Minimalist stackable fashion ring set in solid white gold.',
+    image: 'assets/images/diamond_ring.jpg',
+    reviewCount: 145,
+    seller: 'Luxe Jewelry',
+    price: 120.00,
+    colors: [Colors.blueGrey, Colors.amber],
+    category: 'Jewelry',
+    rate: 4.9,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_014',
+    title: 'Citrus & Amber Eau De Toilette',
+    description:
+        'Refreshing summer citrus fragrance with warm woody base notes (50ml).',
+    image: 'assets/images/citrus_scent.jpg',
+    reviewCount: 88,
+    seller: 'Aroma Essence',
+    price: 62.00,
+    colors: [Colors.orange, Colors.yellow],
+    category: 'Scents',
+    rate: 4.4,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_015',
+    title: 'Vanilla Spice Reed Diffuser',
+    description: 'Home fragrance diffuser set with natural rattan reeds and essential oils.',
+    image: 'assets/images/reed_diffuser.jpg',
+    reviewCount: 190,
+    seller: 'Aroma Essence',
+    price: 28.50,
+    colors: [Colors.brown, Colors.deepOrange],
+    category: 'Scents',
+    rate: 4.7,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_016',
+    title: 'Classic Leather Loafers',
+    description:
+        'Handcrafted genuine leather slip-on loafers with cushioned insoles.',
+    image: 'assets/images/leather_loafers.jpg',
+    reviewCount: 97,
+    seller: 'Stride Athletics',
+    price: 95.00,
+    colors: [Colors.brown, Colors.black],
+    category: 'Shoes',
+    rate: 4.6,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_017',
+    title: 'Chunky Platform Canvas Sneakers',
+    description:
+        'Retro style high-top canvas sneakers with durable rubber outsole.',
+    image: 'assets/images/platform_sneakers.jpg',
+    reviewCount: 230,
+    seller: 'Stride Athletics',
+    price: 58.00,
+    colors: [Colors.white, Colors.black, Colors.red],
+    category: 'Shoes',
+    rate: 4.8,
+    quantity: 1,
+  ),
+  const ProductModel(
+    id: 'prod_018',
+    title: 'Toddler Denim Overalls',
+    description: 'Adjustable strap cotton denim dungarees with side buttons for toddlers.',
+    image: 'assets/images/toddler_overalls.jpg',
+    reviewCount: 52,
+    seller: 'TinyTots Store',
+    price: 32.00,
+    colors: [Colors.blue, Colors.black],
+    category: 'Baby wears',
+    rate: 4.7,
+    quantity: 1,
+  ),
+];

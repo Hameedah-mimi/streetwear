@@ -1,3 +1,4 @@
+import 'package:e_commerce/widgets/custom_scroll.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce/widgets/bottom_nav_bar.dart';
 
@@ -11,7 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(bottomNavigationBar: CustomBottomNavBar()),
+      debugShowCheckedModeBanner: false,
+      scrollBehavior: MyCustomScrollBehavior(),
+      home: CustomBottomNavBar(),
     );
   }
 }
