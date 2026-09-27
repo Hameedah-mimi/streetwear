@@ -1,5 +1,5 @@
 import 'package:e_commerce/pages/cart.dart';
-import 'package:e_commerce/pages/category.dart';
+import 'package:e_commerce/pages/categories.dart';
 import 'package:e_commerce/pages/home.dart';
 import 'package:e_commerce/pages/profile.dart';
 import 'package:e_commerce/pages/shop.dart';
@@ -17,7 +17,7 @@ class CustomBottomNavBar extends StatefulWidget {
 class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
   List screen = [
     ShoppingPage(),
-    CategoryPage(),
+    Categories(),
     HomePage(),
     CartPage(),
     ProfilePage(),

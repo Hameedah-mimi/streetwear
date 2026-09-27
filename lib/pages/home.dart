@@ -1,4 +1,5 @@
 import 'package:e_commerce/core/colors.dart';
+import 'package:e_commerce/pages/categories.dart';
 import 'package:e_commerce/widgets/custom_app_bar.dart';
 import 'package:e_commerce/widgets/image_slider.dart';
 import 'package:e_commerce/widgets/search_bar.dart';
@@ -26,23 +27,17 @@ class _HomePageState extends State<HomePage> {
           children: [
             Padding(
               padding: const EdgeInsets.all(20.0),
-
               child: Column(
                 children: [
                   Container(
                     color: color.kprimaryColor,
                     child: const CustomAppBar(),
                   ),
-
                   const SizedBox(height: 20),
-
                   const CustomSearchBar(),
-
                   const SizedBox(height: 20),
-
                   ImageSlider(
                     currentSlide: currentSlide,
-
                     onchange: (value) {
                       setState(() {
                         currentSlide = value;
@@ -51,6 +46,26 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
+            ),
+            Categories(),
+            Row(
+              children: [
+                const Text(
+                  'New Arrivals',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                const Spacer(),
+                TextButton(
+                  onPressed: () {},
+                  style: TextButton.styleFrom(
+                    textStyle: const TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  child: const Text('See all'),
+                ),
+              ],
             ),
           ],
         ),
