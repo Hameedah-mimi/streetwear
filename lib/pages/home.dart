@@ -2,6 +2,7 @@ import 'package:e_commerce/core/colors.dart';
 import 'package:e_commerce/pages/categories.dart';
 import 'package:e_commerce/widgets/custom_app_bar.dart';
 import 'package:e_commerce/widgets/image_slider.dart';
+import 'package:e_commerce/widgets/product_grid.dart';
 import 'package:e_commerce/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -67,6 +68,8 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
+            const SizedBox(height: 10),
+            ProductGrid(),
           ],
         ),
       ),

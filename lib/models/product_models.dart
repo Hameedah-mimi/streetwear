@@ -75,7 +75,7 @@ final List<ProductModel> products = [
     title: '18K Gold Plated Necklace',
     description:
         'Minimalist elegant gold chain necklace suitable for daily wear.',
-    image: 'assets/images/jewelry.jpg',
+    image: 'assets/images/jewelry.jpeg',
     reviewCount: 88,
     seller: 'Luxe Jewelry',
     price: 89.99,
@@ -102,7 +102,7 @@ final List<ProductModel> products = [
     title: 'Lightweight Running Sneakers',
     description:
         'Cushioned sole athletic shoes designed for comfort and performance.',
-    image: 'assets/images/shoes.jpg',
+    image: 'assets/images/shoes.jpeg',
     reviewCount: 180,
     seller: 'Stride Athletics',
     price: 110.00,
@@ -119,7 +119,7 @@ final List<ProductModel> moreProducts = [
     title: 'Knitted Baby Beanie & Socks Set',
     description:
         'Ultra-soft fleece-lined knit cap and booties set for newborns.',
-    image: 'assets/images/baby_beanie.jpg',
+    image: 'assets/images/baby_beanie.jpeg',
     reviewCount: 42,
     seller: 'TinyTots Store',
     price: 16.50,

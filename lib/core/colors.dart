@@ -6,3 +6,5 @@ class MyColors {
   Color ktetiaryColor = Color(0xffd59cc5);
   Color kbackgroundColor = Color(0xffeadada);
 }
+
+MyColors get myColors => MyColors();
