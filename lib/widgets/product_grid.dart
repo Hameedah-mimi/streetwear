@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 class ProductGrid extends StatelessWidget {
   const ProductGrid({super.key});
 
-  // final List<dynamic> products;
 
   @override
   Widget build(BuildContext context) {

@@ -30,11 +30,14 @@ class _ProductDetailState extends State<ProductDetail> {
 
               const SizedBox(height: 10),
 
-              Image.asset(
-                product.image,
-                width: double.infinity,
-                height: 300,
-                fit: BoxFit.cover,
+              Hero(
+                tag: product.image,
+                child: Image.asset(
+                  product.image,
+                  width: double.infinity,
+                  height: 300,
+                  fit: BoxFit.cover,
+                ),
               ),
 
               const SizedBox(height: 15),
